@@ -12,7 +12,7 @@ public class AB_Variables2 {
 		String nombre = scanner.nextLine();
 		System.out.println("Proporciona el Precio ");
 		int precio = scanner.nextInt();
-		System.out.println("Proporciona el id* de Articulo");
+		System.out.println("Proporciona el id* de Articulo!!");
 		int articulo = scanner.nextInt();
 		System.out.println("Proporciona el envio gratuito:");
         boolean envioGratuito = Boolean.parseBoolean(scanner.nextLine());
