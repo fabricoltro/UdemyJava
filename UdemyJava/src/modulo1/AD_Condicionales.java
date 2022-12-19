@@ -2,7 +2,7 @@ package modulo1;
 
 import java.util.Scanner;
 
-public class AD_Operadores2 {
+public class AD_Condicionales {
 
 	public static void main(String[] args) {
 
