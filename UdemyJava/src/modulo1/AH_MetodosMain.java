@@ -5,14 +5,16 @@ public class AH_MetodosMain {
 	public static void main(String [] args) {
 		
 		AH_Metodos persona = new AH_Metodos();
+		int resultado1;
+		persona.numero1 = 20;
+		persona.numero2 = 10;
 		
-		persona.a = 20;
-		persona.b = 10;
+		persona.sumar();
 		
-		int resultadock = persona.sumarConRetorno();
-		System.out.println(resultadock);
+		persona.sumarConRetorno();
 		
+		persona.dividirConArgumentos(30, 3);
 		
-	}
+ 	}
 	
 }
