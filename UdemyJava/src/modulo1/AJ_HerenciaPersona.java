@@ -5,7 +5,7 @@ public class AJ_HerenciaPersona {
 	protected String nombre;
 	protected int edad;
 	public char genero;
-	protected String direccion;
+	protected String direccion;		
 	
 	public AJ_HerenciaPersona() {
 		
@@ -64,12 +64,19 @@ public class AJ_HerenciaPersona {
 		this.direccion = direccion;
 	}
 
-
 	@Override
 	public String toString() {
-		return "AJ_HerenciaPersona [nombre=" + nombre + ", edad=" + edad + ", genero=" + genero + ", direccion="
-				+ direccion + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("AJ_HerenciaPersona [nombre=").append(nombre);
+		builder.append(", edad=").append(edad);
+		builder.append(", genero=").append(genero);
+		builder.append(", direccion=").append(direccion);
+		builder.append(", ").append(super.toString());
+		builder.append("]");
+		return builder.toString();
 	}
+
+
 	
 	
 	

@@ -9,7 +9,12 @@ public class AF_PersonaCOAM {
 	int edad = 0;
 	int barrio;
 	
+	
 	//metodos
+	
+	public void AF_PERSONACOAM(String nombre) {
+		
+	}
 	
 	public void primerMetodo() {
 		System.out.println("el nombre es :"+nombre);
