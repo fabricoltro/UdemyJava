@@ -29,6 +29,13 @@ public class AE_Empleado {
 	public void setSueldo(double sueldo) {
 		this.sueldo = sueldo;
 	}
+
+	@Override
+	public String toString() {
+		return "AE_Empleado [nombre=" + nombre + ", sueldo=" + sueldo + "]";
+	}
+
+	
 	
 	
 }

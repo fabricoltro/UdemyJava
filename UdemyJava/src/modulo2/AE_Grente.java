@@ -14,6 +14,13 @@ public class AE_Grente  extends AE_Empleado{
 		return  super.obtenerDetalles() + ", departamento = "+ departamento  ;
 	}
 	
+	public String getDepartamento() {
+		return departamento;
+	}
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+	
 	
 	
 	
