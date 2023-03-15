@@ -8,17 +8,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class BA_TestColecciones {
+public class BC_TestColecciones2 {
 
 	public static void main(String[] args) {
 		
-		List miLista = new ArrayList();
+		List<String> miLista = new ArrayList<String>();
 		miLista.add("edad1");
-		miLista.add(15);
+		miLista.add("edad12");
 		miLista.add("edad2");
-		miLista.add(21);
+		miLista.add("edad23");
 		miLista.add("edad3");
-		miLista.add(10/2);
+		miLista.add("edad34");
+		String elemento = miLista.get(0);
 		
 		//for(Object elementos : miLista) {
 		//	System.out.println(elementos);
@@ -26,7 +27,7 @@ public class BA_TestColecciones {
 		
 		
 		// set no guarda el orden en la variable
-		Set miSet = new HashSet();
+		Set <String> miSet = new HashSet();
 		miSet.add("Lunes");
 		miSet.add("Martes");
 		miSet.add("Miercoles");
@@ -36,15 +37,15 @@ public class BA_TestColecciones {
 		
 		
 		
-		Map miMapa = new HashMap();
-		miMapa.put(15, "jose");
-		miMapa.put(18, "carla");
-		miMapa.put(21, "agus");
-		miMapa.put(33, "emanuel");
+		Map <String, String>miMapa = new HashMap();
+		miMapa.put("jj", "jose");
+		miMapa.put("cc", "carla");
+		miMapa.put("aa", "agus");
+		miMapa.put("ee", "emanuel");
 		
 		
-		String elemento = (String) miMapa.get(15);
-		//System.out.println(elemento);
+		//String elementoMap = miMapa.get("jj");
+		// System.out.println(elementoMap);
 		
 		//key set agrega un set en conjunto pero no garantiza un orden
 		imprimir(miMapa.keySet());
@@ -55,10 +56,16 @@ public class BA_TestColecciones {
 	
 	}
 	
-	public static void imprimir(Collection coleccion) {
-		coleccion.forEach(elemento -> {
-			System.out.println("elemento: " + elemento);
-		});
+	public static void imprimir(Collection<String> coleccion) {
+		//coleccion.forEach(elemento -> {
+		//	System.out.println("elemento: " + elemento);
+		//});
+	
+		for(String elemento : coleccion) {
+			System.out.println("elemento = " + elemento);
+		}
+	
+	
 	}
 	
 }
